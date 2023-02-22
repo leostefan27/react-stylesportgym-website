@@ -8,7 +8,7 @@ const AboutUsComponent = () => {
         <h1 className='trainers-heading'>Meet Our Trainers</h1>
         <TrainersComponent />
         <LocationComponent />
-        <h1 className='quote'>Don't stop when you're tired, stop when you're done.</h1>
+        <h1 className='quote'>It's time to upgrade your life!</h1>
     </section>
   )
 }
