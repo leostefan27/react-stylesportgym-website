@@ -127,14 +127,14 @@ body {
   background-color: var(--main-bg-color);
   position: relative;
   z-index: 998;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .navbar .smallNavbar .toggleNavbar {
   font-size: 1.5rem;
   cursor: pointer;
   transition: all 300ms;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .navbar .smallNavbar .toggleNavbar:hover {
