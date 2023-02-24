@@ -690,9 +690,11 @@ body {
 @media screen and (max-width: 500px) {
   #showcase-section .words {
     display: flex;
-    flex-direction: column;
-    gap: 0rem;
-    font-size: 2rem;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 1rem;
+    justify-content: center;
+    font-size: 2.5rem;
     font-weight: bolder;
   }
 
@@ -716,6 +718,10 @@ body {
     animation: pulse 10s infinite;
   }
 
+  #location-section .info {
+    align-items: flex-start;
+  }
+
   #trainers-section .container {
     display: flex;
     flex-direction: column;
@@ -724,7 +730,7 @@ body {
     gap: 2.5rem;
   }
 
-  #footer-section .footer {
+  #prices-section #footer-section .footer {
     display: flex;
     width: 100%;
     flex-direction: column;

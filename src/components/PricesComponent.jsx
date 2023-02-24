@@ -19,7 +19,7 @@ const PricesComponent = () => {
       <div className="container">
         <ul className="subscriptions">
           {subs.map((sub, idx) => {
-            return (<li>
+            return (<li key={idx}>
                 <div><span>{sub.name}</span><span>{`${sub.price} RON`}</span></div>
                 <small>{sub.about}</small>
             </li>)
