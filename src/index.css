@@ -64,7 +64,7 @@ body {
   z-index: 999;
   width: 100%;
   padding: 0.5rem 0;
-  -webkit-box-shadow: 4px 4px 15px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 4px 4px 15px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 4px 4px 15px 5px rgba(10, 10, 10, 0.2);
 }
 
@@ -85,6 +85,7 @@ body {
 
 .navbar .branding h3 {
   color: white;
+  cursor: pointer;
 }
 
 .navbar .branding h3 span {
@@ -104,11 +105,13 @@ body {
 
 .navbar nav ul li {
   padding: 5px 20px;
+  cursor: pointer;
 }
 
 .navbar nav ul a {
   transition: all 500ms;
   color: white;
+  cursor: pointer;
 }
 
 .navbar nav ul a:hover {
@@ -117,6 +120,7 @@ body {
 
 .navbar nav ul li {
   transition: all 500ms;
+  cursor: pointer;
 }
 
 .navbar nav ul li:hover {
@@ -155,8 +159,8 @@ body {
   top: 50px;
   right: 0px;
   font-size: 1rem;
-  -webkit-box-shadow: 4px 4px 15px 5px rgba(0, 0, 0, 0.5);
-  box-shadow: 4px 4px 15px 5px rgba(10, 10, 10, 0.5);
+  -webkit-box-shadow: 4px 4px 15px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 15px 5px rgba(10, 10, 10, 0.2);
 }
 
 .navbar .smallNavbar div ul {
@@ -274,8 +278,8 @@ body {
   padding: 1rem 2rem;
   cursor: pointer;
   transition: 500ms all;
-  -webkit-box-shadow: 4px 4px 15px 5px rgba(0, 0, 0, 0.5);
-  box-shadow: 4px 4px 15px 5px rgba(10, 10, 10, 0.5);
+  -webkit-box-shadow: 4px 4px 15px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 15px 5px rgba(10, 10, 10, 0.2);
   border-radius: 10px;
   animation: pulse 5s infinite;
 }
@@ -320,6 +324,15 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
+  cursor: pointer;
+  transition: all 500ms;
+  border-radius: 10px;
+  padding: 1rem 0;
+}
+
+#trainers-section .trainer:hover {
+  -webkit-box-shadow: 4px 4px 15px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 15px 5px rgba(10, 10, 10, 0.2);
 }
 
 #trainers-section .trainer:nth-child(1) {
@@ -442,6 +455,10 @@ body {
   transition: all 500ms;
 }
 
+#prices-section .subscriptions li:nth-child(2n+1) {
+  background-color: rgb(240, 240, 240);
+}
+
 #prices-section .subscriptions li:hover {
   background-color: var(--secondary-bg-color);
   color: var(--primary-color);
@@ -455,6 +472,83 @@ body {
   align-items: center;
   font-weight: bold;
 }
+
+#prices-section .subscriptions li div span:nth-child(2) {
+  text-align: end;
+}
+
+.testimonials {
+  color: black;
+}
+
+.testimonials .container {
+  background-color: transparent;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 0;
+}
+
+.testimonials .container hr {
+  width: 50%;
+}
+
+.testimonials .testimonialsTitle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.testimonials .testimonialsTitle h2 {
+  color: #858b11;
+}
+
+.testimonials .testimonialsTitle h3 {
+  font-size: 3.5rem;
+  animation: pulse 10s infinite;
+}
+
+.testimonial {
+  width: 80%;
+  margin: auto;
+  gap: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+  -webkit-box-shadow: 4px 4px 15px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 15px 5px rgba(10, 10, 10, 0.2);
+  /* background-color: rgb(240, 240, 240); */
+  border-radius: 10px;
+}
+
+.testimonial .testimonialText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.testimonial .testimonialText .testimonialAuthor {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  font-weight: bold;
+}
+
+.testimonial .testimonialImg img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+
 
 
 /* Contact */
@@ -685,6 +779,25 @@ body {
   #contact-section .container {
     width: 80%;
   }
+
+  .testimonials .container {
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem 2.5rem;
+  }
+
+  .testimonial .testimonialText .testimonialAuthor {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-weight: bold;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -720,6 +833,20 @@ body {
 
   #location-section .info {
     align-items: flex-start;
+  }
+
+  .testimonials .testimonialsTitle h3 {
+    font-size: 2.5rem;
+  }
+
+  .testimonials .container {
+    width: 100%;
+  }
+
+  .testimonials .testimonial {
+    padding: 3rem 1rem;
+    width: 80%;
+    font-size: 0.8rem;
   }
 
   #trainers-section .container {
@@ -767,6 +894,23 @@ body {
     font-size: 2rem;
     padding-top: 7.5rem;
     animation: pulse 10s infinite;
+  }
+
+  #footer-section .container {
+    width: 90%;
+  }
+
+  #footer-section .container .footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #footer-section .container .footer .data {
+    align-items: flex-start;
+  }
+
+  #footer-section .copyright {
+    font-size: 0.8rem;
   }
 }
 

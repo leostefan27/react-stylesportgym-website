@@ -33,7 +33,7 @@ const NavbarComponent = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/logo.png`}
             alt="Logo"
           /> */}
-          <h3><span>StyleSport</span>Gym</h3>
+          <h3 onClick={() => {window.location.href="#"}}><span>StyleSport</span>Gym</h3>
         </div>
 
         {smallScreen ? (
@@ -45,7 +45,7 @@ const NavbarComponent = () => {
             />
 
             {showNavbar && (
-              <div onMouseLeave={() => setShowNavbar(false)}>
+              <div onMouseLeave={() => {setShowNavbar(false)}}>
                 <ul>
                   <a href="#">
                     <li>Home</li>
